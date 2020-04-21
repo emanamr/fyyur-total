@@ -1,0 +1,2204 @@
+
+2020-04-11 00:58:47,299 INFO: errors [in E:\nano\FSND\projects\01_fyyur\starter_code\app.py:507]
+2020-04-11 00:59:08,565 ERROR: Exception on /venues/create [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 217, in create_venue_form
+    form = VenueForm()
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 212, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 278, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 132, in process
+    field.process(formdata)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-04-11 00:59:20,200 ERROR: Exception on /artists/create [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 410, in create_artist_form
+    form = ArtistForm()
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 212, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 278, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 132, in process
+    field.process(formdata)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-04-11 00:59:27,620 ERROR: Exception on /venues/3 [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 210, in show_venue
+    return render_template('pages/show_venue.html', venue=data)
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_venue.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_venue.html", line 57, in block "content"
+    <h6>{{ show.start_time|datetime('full') }}</h6>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 70, in format_datetime
+    return babel.dates.format_datetime(date, format)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-11 00:59:30,944 ERROR: Exception on /shows [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 470, in shows
+    return render_template('pages/shows.html', shows=data)
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 9, in block "content"
+    <h4>{{ show.start_time|datetime('full') }}</h4>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 70, in format_datetime
+    return babel.dates.format_datetime(date, format)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-11 00:59:42,794 ERROR: Exception on /artists/4 [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 349, in show_artist
+    return render_template('pages/show_artist.html', artist=data)
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_artist.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_artist.html", line 68, in block "content"
+    <h6>{{ show.start_time|datetime('full') }}</h6>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 70, in format_datetime
+    return babel.dates.format_datetime(date, format)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-11 00:59:59,669 ERROR: Exception on /shows/create [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 475, in create_shows
+    form = ShowForm()
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 212, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 278, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 132, in process
+    field.process(formdata)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-04-11 01:01:45,461 INFO: errors [in E:\nano\FSND\projects\01_fyyur\starter_code\app.py:507]
+2020-04-11 01:02:04,620 ERROR: Exception on /venues/create [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 217, in create_venue_form
+    form = VenueForm()
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 212, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 278, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 132, in process
+    field.process(formdata)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-04-11 01:23:31,533 ERROR: Exception on /venues/create [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 217, in create_venue_form
+    form = VenueForm()
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 212, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 278, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 132, in process
+    field.process(formdata)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-04-11 01:29:25,287 ERROR: Exception on /venues/create [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 217, in create_venue_form
+    #  ----------------------------------------------------------------
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 212, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 278, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 132, in process
+    field.process(formdata)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-04-11 01:29:32,198 ERROR: Exception on /shows [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 470, in shows
+    "artist_name": "The Wild Sax Band",
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 9, in block "content"
+    <h4>{{ show.start_time|datetime('full') }}</h4>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 70, in format_datetime
+    if format == 'full':
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-11 01:29:44,667 ERROR: Exception on /shows [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 470, in shows
+    "artist_name": "The Wild Sax Band",
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 9, in block "content"
+    <h4>{{ show.start_time|datetime('full') }}</h4>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 70, in format_datetime
+    if format == 'full':
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-11 01:39:17,868 ERROR: Exception on /venues/create [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 217, in create_venue_form
+    #  ----------------------------------------------------------------
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 212, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 278, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 132, in process
+    field.process(formdata)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-04-11 01:39:22,511 ERROR: Exception on /shows/create [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 475, in create_shows
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 212, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 278, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 132, in process
+    field.process(formdata)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-04-11 01:44:21,583 ERROR: Exception on /shows/create [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 475, in create_shows
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 212, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 278, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 132, in process
+    field.process(formdata)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-04-11 01:44:28,283 ERROR: Exception on /venues/create [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 217, in create_venue_form
+    #  ----------------------------------------------------------------
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 212, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 278, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 132, in process
+    field.process(formdata)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-04-11 02:23:04,445 ERROR: Exception on /venues/create [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 217, in create_venue_form
+    #  ----------------------------------------------------------------
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 212, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 278, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 132, in process
+    field.process(formdata)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-04-11 02:23:16,261 ERROR: Exception on /venues/create [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 217, in create_venue_form
+    #  ----------------------------------------------------------------
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 212, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 278, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 132, in process
+    field.process(formdata)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-04-11 02:23:36,238 ERROR: Exception on /venues/create [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 217, in create_venue_form
+    #  ----------------------------------------------------------------
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 212, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 278, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 132, in process
+    field.process(formdata)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-04-11 02:25:24,745 ERROR: Exception on /shows [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 470, in shows
+    "artist_name": "The Wild Sax Band",
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 9, in block "content"
+    <h4>{{ show.start_time|datetime('full') }}</h4>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 70, in format_datetime
+    if format == 'full':
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-11 02:25:34,161 ERROR: Exception on /venues/create [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 217, in create_venue_form
+    #  ----------------------------------------------------------------
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 212, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 278, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 132, in process
+    field.process(formdata)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-04-11 02:54:04,051 ERROR: Exception on /venues/create [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 217, in create_venue_form
+    #  ----------------------------------------------------------------
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 212, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 278, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 132, in process
+    field.process(formdata)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-04-11 02:54:17,808 ERROR: Exception on /shows [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 470, in shows
+    "start_time": "2035-04-01T20:00:00.000Z"
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 9, in block "content"
+    <h4>{{ show.start_time|datetime('full') }}</h4>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 70, in format_datetime
+    if format == 'full':
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-11 02:54:29,082 ERROR: Exception on /venues/1 [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 210, in show_venue
+    "past_shows_count": 1,
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_venue.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_venue.html", line 71, in block "content"
+    <h6>{{ show.start_time|datetime('full') }}</h6>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 70, in format_datetime
+    if format == 'full':
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-12 21:58:24,822 INFO: errors [in E:\nano\FSND\projects\01_fyyur\starter_code\app.py:513]
+2020-04-12 21:58:33,304 INFO: errors [in E:\nano\FSND\projects\01_fyyur\starter_code\app.py:513]
+2020-04-12 22:07:06,060 ERROR: Exception on /shows [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 476, in shows
+    return render_template('pages/shows.html', shows=data)
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 9, in block "content"
+    <h4>{{ show.start_time|datetime('full') }}</h4>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 74, in format_datetime
+    return babel.dates.format_datetime(date, format)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-12 22:11:20,473 ERROR: Exception on /artists/4 [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 355, in show_artist
+    return render_template('pages/show_artist.html', artist=data)
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_artist.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_artist.html", line 68, in block "content"
+    <h6>{{ show.start_time|datetime('full') }}</h6>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 74, in format_datetime
+    return babel.dates.format_datetime(date, format)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-12 22:14:30,855 INFO: errors [in E:\nano\FSND\projects\01_fyyur\starter_code\app.py:513]
+2020-04-12 22:40:33,554 ERROR: Exception on /venues/3 [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 214, in show_venue
+    return render_template('pages/show_venue.html', venue=data)
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_venue.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_venue.html", line 57, in block "content"
+    <h6>{{ show.start_time|datetime('full') }}</h6>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 74, in format_datetime
+    return babel.dates.format_datetime(date, format)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-16 21:34:16,523 INFO: errors [in E:\nano\FSND\projects\01_fyyur\starter_code\app.py:513]
+2020-04-16 21:34:37,754 ERROR: Exception on /shows [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 476, in shows
+    return render_template('pages/shows.html', shows=data)
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 9, in block "content"
+    <h4>{{ show.start_time|datetime('full') }}</h4>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 74, in format_datetime
+    return babel.dates.format_datetime(date, format)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-16 21:34:43,981 ERROR: Exception on /shows [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 476, in shows
+    return render_template('pages/shows.html', shows=data)
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 9, in block "content"
+    <h4>{{ show.start_time|datetime('full') }}</h4>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 74, in format_datetime
+    return babel.dates.format_datetime(date, format)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-16 21:47:12,818 ERROR: Exception on /venues/3 [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 214, in show_venue
+    return render_template('pages/show_venue.html', venue=data)
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_venue.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_venue.html", line 57, in block "content"
+    <h6>{{ show.start_time|datetime('full') }}</h6>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 74, in format_datetime
+    return babel.dates.format_datetime(date, format)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-16 21:47:20,732 ERROR: Exception on /venues/1 [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 214, in show_venue
+    return render_template('pages/show_venue.html', venue=data)
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_venue.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_venue.html", line 71, in block "content"
+    <h6>{{ show.start_time|datetime('full') }}</h6>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 74, in format_datetime
+    return babel.dates.format_datetime(date, format)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-16 21:47:31,164 ERROR: Exception on /artists/4 [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 355, in show_artist
+    return render_template('pages/show_artist.html', artist=data)
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_artist.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_artist.html", line 68, in block "content"
+    <h6>{{ show.start_time|datetime('full') }}</h6>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 74, in format_datetime
+    return babel.dates.format_datetime(date, format)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-16 21:47:34,319 ERROR: Exception on /artists/5 [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 355, in show_artist
+    return render_template('pages/show_artist.html', artist=data)
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_artist.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_artist.html", line 68, in block "content"
+    <h6>{{ show.start_time|datetime('full') }}</h6>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 74, in format_datetime
+    return babel.dates.format_datetime(date, format)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-16 21:48:28,916 ERROR: Exception on /shows [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 476, in shows
+    return render_template('pages/shows.html', shows=data)
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 9, in block "content"
+    <h4>{{ show.start_time|datetime('full') }}</h4>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 74, in format_datetime
+    return babel.dates.format_datetime(date, format)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-16 21:54:38,055 ERROR: Exception on /artists/5 [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 355, in show_artist
+    return render_template('pages/show_artist.html', artist=data)
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_artist.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_artist.html", line 68, in block "content"
+    <h6>{{ show.start_time|datetime('full') }}</h6>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 74, in format_datetime
+    return babel.dates.format_datetime(date, format)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-16 21:54:40,637 ERROR: Exception on /artists/6 [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 355, in show_artist
+    return render_template('pages/show_artist.html', artist=data)
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_artist.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_artist.html", line 54, in block "content"
+    <h6>{{ show.start_time|datetime('full') }}</h6>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 74, in format_datetime
+    return babel.dates.format_datetime(date, format)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-16 21:54:42,766 ERROR: Exception on /artists/4 [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 355, in show_artist
+    return render_template('pages/show_artist.html', artist=data)
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_artist.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_artist.html", line 68, in block "content"
+    <h6>{{ show.start_time|datetime('full') }}</h6>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 74, in format_datetime
+    return babel.dates.format_datetime(date, format)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-16 21:54:43,982 ERROR: Exception on /shows [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 476, in shows
+    return render_template('pages/shows.html', shows=data)
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 9, in block "content"
+    <h4>{{ show.start_time|datetime('full') }}</h4>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 74, in format_datetime
+    return babel.dates.format_datetime(date, format)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-16 21:56:51,809 ERROR: Exception on /artists/5 [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 355, in show_artist
+    return render_template('pages/show_artist.html', artist=data)
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_artist.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_artist.html", line 68, in block "content"
+    <h6>{{ show.start_time|datetime('full') }}</h6>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 74, in format_datetime
+    return babel.dates.format_datetime(date, format)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-16 21:56:52,127 ERROR: Exception on /artists/5 [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 355, in show_artist
+    return render_template('pages/show_artist.html', artist=data)
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_artist.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_artist.html", line 68, in block "content"
+    <h6>{{ show.start_time|datetime('full') }}</h6>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 74, in format_datetime
+    return babel.dates.format_datetime(date, format)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-16 22:40:25,958 ERROR: Exception on /shows [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 476, in shows
+    "start_time": "2035-04-15T20:00:00.000Z"
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 9, in block "content"
+    <h4>{{ show.start_time|datetime('full') }}</h4>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 74, in format_datetime
+    elif format == 'medium':
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-16 22:50:19,307 ERROR: Exception on /shows [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 476, in shows
+    "start_time": "2035-04-15T20:00:00.000Z"
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 9, in block "content"
+    <h4>{{ show.start_time|datetime('full') }}</h4>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 74, in format_datetime
+    elif format == 'medium':
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-16 22:52:25,319 ERROR: Exception on /venues/1 [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 214, in show_venue
+    }
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_venue.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_venue.html", line 71, in block "content"
+    <h6>{{ show.start_time|datetime('full') }}</h6>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 74, in format_datetime
+    elif format == 'medium':
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-16 23:04:40,347 ERROR: Exception on /shows [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 476, in shows
+    "artist_id": 6,
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 9, in block "content"
+    <h4>{{ show.start_time|datetime('full') }}</h4>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 74, in format_datetime
+    date = dateutil.parser.parse(value)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-16 23:04:42,621 ERROR: Exception on /shows [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 476, in shows
+    "artist_id": 6,
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 9, in block "content"
+    <h4>{{ show.start_time|datetime('full') }}</h4>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 74, in format_datetime
+    date = dateutil.parser.parse(value)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-16 23:11:10,298 ERROR: Exception on /shows [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 476, in shows
+    "venue_name": "Park Square Live Music & Coffee",
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 9, in block "content"
+    <h4>{{ show.start_time|datetime('full') }}</h4>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 74, in format_datetime
+    def format_datetime(value, format='medium'):
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-16 23:27:27,624 INFO: errors [in E:\nano\FSND\projects\01_fyyur\starter_code\app.py:515]
+2020-04-16 23:34:25,654 INFO: errors [in E:\nano\FSND\projects\01_fyyur\starter_code\app.py:515]
+2020-04-16 23:37:13,170 INFO: errors [in E:\nano\FSND\projects\01_fyyur\starter_code\app.py:515]
+2020-04-17 00:29:05,837 ERROR: Exception on /venues/1 [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 214, in show_venue
+    }
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_venue.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\show_venue.html", line 71, in block "content"
+    <h6>{{ show.start_time|datetime('full') }}</h6>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 74, in format_datetime
+    elif format == 'medium':
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-17 03:29:19,276 ERROR: Exception on /shows [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 476, in shows
+    "artist_image_link": "https://images.unsplash.com/photo-1558369981-f9ca78462e61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=794&q=80",
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 9, in block "content"
+    <h4>{{ show.start_time|datetime('full') }}</h4>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 74, in format_datetime
+    def format_datetime(value, format='medium'):
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-17 16:32:38,890 INFO: errors [in E:\nano\FSND\projects\01_fyyur\starter_code\app.py:529]
+2020-04-17 16:36:31,403 INFO: errors [in E:\nano\FSND\projects\01_fyyur\starter_code\app.py:529]
+2020-04-17 16:37:02,166 ERROR: Exception on /shows [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 492, in shows
+    return render_template('pages/shows.html', shows=data)
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 9, in block "content"
+    <h4>{{ show.start_time|datetime('full') }}</h4>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 79, in format_datetime
+    return babel.dates.format_datetime(date, format)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-17 21:12:34,094 INFO: errors [in E:\nano\FSND\projects\01_fyyur\starter_code\app.py:583]
+2020-04-17 21:16:32,086 ERROR: Exception on /venues/create [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 245, in create_venue_form
+    form = VenueForm()
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 212, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 278, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 132, in process
+    field.process(formdata)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-04-17 21:16:36,840 ERROR: Exception on /shows [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 546, in shows
+    return render_template('pages/shows.html', shows=data)
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Program Files\Python38\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Program Files\Python38\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\templates\pages\shows.html", line 9, in block "content"
+    <h4>{{ show.start_time|datetime('full') }}</h4>
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 87, in format_datetime
+    return babel.dates.format_datetime(date, format)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 738, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1232, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1229, in __mod__
+    return self.format % other
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1264, in __getitem__
+    return self.format_weekday(char, num)
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 1397, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "C:\Program Files\Python38\lib\site-packages\babel\dates.py", line 314, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-04-17 21:16:51,628 ERROR: Exception on /venues/create [GET] [in C:\Program Files\Python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Program Files\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\nano\FSND\projects\01_fyyur\starter_code\app.py", line 245, in create_venue_form
+    form = VenueForm()
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 212, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 278, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\form.py", line 132, in process
+    field.process(formdata)
+  File "C:\Program Files\Python38\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Program Files\Python38\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
